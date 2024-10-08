@@ -1,7 +1,3 @@
-Here is a `README.md` for your **Hello-World-RTOS** repository:
-
----
-
 # Hello-World-RTOS
 
 This project demonstrates a simple RTOS (Real-Time Operating System) setup using FreeRTOS on an embedded system. The system consists of four tasks running in parallel, each performing a specific function. The tasks are:
