@@ -26,11 +26,11 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
        |   (Task 1)     |                |    (Task 2)    |
        |  - Monitors    |                |  - Reads ADC   |
        |    button1     |                |    values      |
-       |                |                |                |
-       +-------+--------+                +-------+--------+
-               |                                 |
-               v                                 v
-       +----------------+                +----------------+
+       |                | -----|  |----- |                |
+       +-------+--------+      |  |       +-------+--------+
+               |               |  |               |
+               v      v--------|--|               v
+       +----------------+      |------>  +----------------+
        |                |                |                |
        |   dispOLED     | <------------- |   dispUART     |
        |   (Task 3)     |                |    (Task 4)    |
@@ -43,9 +43,9 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
 
 - **Task 1 (pickButton)**: This task monitors a button press and modifies the system state, influencing both the **dispOLED** task (by changing LED/OLED display states) and the **dispUART** task (by sending UART messages when the button is pressed).
   
-- **Task 2 (getADC)**: The task reads ADC values continuously. These values are transmitted to the **dispUART** task, which prints the values for debugging or monitoring.
+- **Task 2 (getADC)**: The task reads ADC values continuously. These values are transmitted to the global value that will be used in **dispUART** task and **dispOLED** task.
   
-- **Task 3 (dispOLED)**: This task controls the display on an OLED screen and controls LEDs based on the system state, which is updated by the **pickButton** task.
+- **Task 3 (dispOLED)**: This task controls the display on an OLED screen and controls LEDs based on the system state, which is updated by the **pickButton** task and **getADC** task.
   
 - **Task 4 (dispUART)**: This task communicates with the UART interface. It displays the ADC readings and responds to user input via UART. It can also indicate when the button is pressed (from **pickButton**).
 
