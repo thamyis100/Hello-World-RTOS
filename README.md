@@ -8,7 +8,7 @@ This project demonstrates a simple RTOS (Real-Time Operating System) setup using
 
 1. **pickButton Task**: Monitors the state of a button.
 2. **getADC Task**: Reads analog data from an ADC (Analog-to-Digital Converter).
-3. **dispOLED Task**: Displays information on an OLED screen and controls LEDs based on system state.
+3. **dispOLED Task**: controls LEDs based on system state.
 4. **dispUART Task**: Communicates with a UART (Universal Asynchronous Receiver-Transmitter) interface to receive user inputs and display data.
 
 ## About FreeRTOS
@@ -53,7 +53,7 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
 
 - **pickButton**: This task monitors the GPIO pin connected to `Button1`. When the button is pressed, it updates the `button1_pressed` flag and increments the system state.
 - **getADC**: This task reads the ADC values from `hadc1`, and the results are stored in `x_val`. These values can be processed and displayed via UART.
-- **dispOLED**: This task handles the OLED screen display and LED controls. Depending on the state (set by `pickButton`), it will adjust the behavior of the LEDs.
+- **dispOLED**: This task handles the LED controls. Depending on the state (set by `pickButton`), it will adjust the behavior of the LEDs.
 - **dispUART**: This task interacts with the UART interface. It displays the current ADC value when prompted by user input and indicates button presses.
 
 ---
