@@ -51,7 +51,3 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
 - **getADC**: This task reads the ADC values from `hadc1`, and the results are stored in `x_val`. These values can be processed and displayed via UART.
 - **dispOLED**: This task handles the LED controls. Depending on the state (set by `pickButton`), it will adjust the behavior of the LEDs.
 - **dispUART**: This task interacts with the UART interface. It displays the current ADC value when prompted by user input and indicates button presses.
-
----
-
-This README gives a clear understanding of the FreeRTOS system and how tasks are organized and related in the project.
