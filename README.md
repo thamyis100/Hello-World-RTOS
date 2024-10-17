@@ -55,5 +55,6 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
 ### Hello World (hardware)
 Berikut adalah link foto hasil pengujian pada modul stm32
 
-![WhatsApp Image 2024-10-17 at 10 28 24_698a076b](https://github.com/user-attachments/assets/d6f81c03-355c-4f4f-bda9-beec3ca647ba)
+![WhatsApp Image 2024-10-17 at 10 58 42_727b6b07](https://github.com/user-attachments/assets/9c8563f9-0f3c-4f40-80c6-522a1b06b581)
+
 
