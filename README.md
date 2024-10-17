@@ -58,6 +58,6 @@ Berikut adalah link foto hasil pengujian pada modul stm32
 
 ## Video Real-time Operating Systems
 
-https://drive.google.com/file/d/1G8gPoqMtAE6XyKHkdYXiNofHoRIl4eAT/view?usp=sharing
+
 
 
