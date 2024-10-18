@@ -57,7 +57,7 @@ Berikut adalah link foto hasil pengujian pada modul stm32
 ![hello world image](https://github.com/user-attachments/assets/3176b95d-cba3-4c89-9430-6c4e2ce292e0)
 
 ### Hello World_Praktikum 2 (Video Demo)
-
+https://github.com/user-attachments/assets/7694cc9d-5f23-4370-abd4-39cfb9801110
 
 
 
