@@ -56,8 +56,6 @@ Below is a diagram that illustrates how the four tasks interact and affect one a
 Berikut adalah link foto hasil pengujian pada modul stm32
 ![hello world image](https://github.com/user-attachments/assets/3176b95d-cba3-4c89-9430-6c4e2ce292e0)
 
-## Video Real-time Operating Systems
-https://drive.google.com/file/d/1G8gPoqMtAE6XyKHkdYXiNofHoRIl4eAT/view?usp=drive_link
 
 
 
